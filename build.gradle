@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def lc4jVersion = "1.11.0"
+
+dependencies {
+    implementation "dev.langchain4j:langchain4j:${lc4jVersion}"
+    implementation "dev.langchain4j:langchain4j-open-ai:${lc4jVersion}"
+    implementation "dev.langchain4j:langchain4j-google-ai-gemini:${lc4jVersion}"
+    implementation "dev.langchain4j:langchain4j-anthropic:${lc4jVersion}"
+    implementation "dev.langchain4j:langchain4j-mistral-ai:${lc4jVersion}"
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
