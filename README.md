@@ -12,7 +12,7 @@ demonstration of using a LangChain4j ChatModel to access Google Gemini
 - PromptTechniques.java - demonstration of a structured prompt that guides an LLM.
 - MyService.java - Simple demonstration of a LangChain4j AiService
 - ChatService.java - Simple chatbot with and without conversational memory
-Try these prompts "My name is Frank and I enjoy music", then ask the LLM what your name is.
+Try these prompts "My name is Frank and I enjoy music", then ask the LLM what your name is and what you enjoy.
 - GetEmbedding.java - Example of using an embedding service to retrieve an embedding 
 vector for a given string.
 - Collaboration.java - Using one LLM to judge the output from another LLM
